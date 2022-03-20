@@ -100,7 +100,6 @@ namespace AddressBookManagement
             person.Remove(pers);
             string jsonData = JsonConvert.SerializeObject(person);
             File.WriteAllText(@"D:\.Net\Assignment\day10\AddressBookManagement\AddressBookManagement\result.json", jsonData);
-
         }
 
 
