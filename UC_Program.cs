@@ -87,6 +87,23 @@ namespace AddressBookManagement
             File.WriteAllText(@"D:\.Net\Assignment\day10\AddressBookManagement\AddressBookManagement\result.json", jsonData);
         }
 
+        public void Remove(string First_Name)
+        {
+            Person pers = null;
+            foreach (Person p in person)
+            {
+                if (p.First_Name == First_Name)
+                {
+                    pers = p;
+                }
+            }
+            person.Remove(pers);
+            string jsonData = JsonConvert.SerializeObject(person);
+            File.WriteAllText(@"D:\.Net\Assignment\day10\AddressBookManagement\AddressBookManagement\result.json", jsonData);
+
+        }
+
+
     }
 
 

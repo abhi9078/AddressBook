@@ -50,12 +50,19 @@ namespace AddressBookManagement
             uC_2.addPerson(person);
             uC_2.Display();*/
 
-            UC_Program uc_3 = new UC_Program();
+           /* UC_Program uc_3 = new UC_Program();
             uc_3.Display();
             Console.WriteLine("Enter First name to Edit that particular Item: ");
             string name=Console.ReadLine();
             uc_3.EditPerson(name);
-            uc_3.Display();
+            uc_3.Display();*/
+
+            UC_Program uc_4 = new UC_Program();
+            uc_4.Display();
+            Console.WriteLine("Enter First name to Delete that particular Item: ");
+            string name = Console.ReadLine();
+            uc_4.Remove(name);
+            uc_4.Display();
 
         }
     }
