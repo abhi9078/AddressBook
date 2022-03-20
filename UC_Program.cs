@@ -23,7 +23,7 @@ namespace AddressBookManagement
 
         public string Result()
         {
-            return "Name is: " + First_Name + Last_Name + "\nAddress: " + Address + "\nCity is " + City +
+            return "\nName is: " + First_Name +" "+ Last_Name + "\nAddress: " + Address + "\nCity is " + City +
                 "\nState is " + State + "\nPostal code is: " + PostalCode + "\nPhone: " + PhoneNumber + "\nEmail is " + Email;
         }
     }
@@ -34,7 +34,7 @@ namespace AddressBookManagement
 
         public void Display()
         {
-            Console.WriteLine("Welcome to Program");
+            Console.WriteLine("\nAddressBook is: ");
             foreach (Person per in person)
             {
                 Console.WriteLine(per.Result());
