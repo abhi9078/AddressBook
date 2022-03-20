@@ -21,7 +21,7 @@ namespace AddressBookManagement
             uC_1.addPerson(person);
             uC_1.Display();*/
 
-            UC_Program uC_2 = new UC_Program();
+           /* UC_Program uC_2 = new UC_Program();
             Person person = new Person();
             Console.WriteLine("Enter First Name: ");
             string fname = Console.ReadLine();
@@ -48,7 +48,14 @@ namespace AddressBookManagement
             string email = Console.ReadLine();
             person.Email = email;
             uC_2.addPerson(person);
-            uC_2.Display();
+            uC_2.Display();*/
+
+            UC_Program uc_3 = new UC_Program();
+            uc_3.Display();
+            Console.WriteLine("Enter First name to Edit that particular Item: ");
+            string name=Console.ReadLine();
+            uc_3.EditPerson(name);
+            uc_3.Display();
 
         }
     }
